@@ -51,20 +51,65 @@
     <h2>Kasutuslooskeem</h2><br>
     <!-- kirjuta kodus kasutuskeemilooskeemi kohta -->
      <p>
-        
-     </p><br><br>
+        Kasutuslooskeemi kasutatakse kasutusloomudeli visuaalseks kujuntamiseks, kusjuures kasutusloomudel <br>
+        võib olla jaotatud paljudeks kasutuslooskeemiteks. See sisaldab multielemente aktorite ja kasutuslugude <br>
+        jaoks ning näitab seoseid nende elementide vahel. <br>
+        Kasutusloo modelleerimine määrab arendatava süsteemi piirid, mille täpne paikapanemine (süsteemi piiritlemine) <br>
+        on eduka süsteemiarenduse esimene tingimus. Pandakse paika esimese väljalaske suurus, mis peaks olema väheste, <br>
+        kuid tähtsamate funktsionaalustega ning sellise arhitektuuriga, kuhu saaks hiljem soovitud funktsionaalsusi <br>
+        juurde lisada. Veel tuleks süsteemi jaoks luua põhimõistete sõnastik, kuhu on lisatud kasutuslugude kirjeldus.
+    </p><br><br>
     <h2>Klassidiagramm</h2><br>
-    <!-- kirjuta kodus kasutuskeemilooskeemi kohta -->    
+    <!-- kirjuta kodus kasutuskeemilooskeemi kohta -->
+     <p>
+        Klassidiagramm kirjeldab süsteemis olevate pbjektide tüüpe ning nendevahelisi staatilisi seoseid. Staatilisi <br>
+        seoseid on kahte põhitüüpi: kooslused (association) ja alamtüübid (subtypes). Klassidiagramm kirjeldab ka klassi <br>
+        atribuute, operatsioone ning tõkkeid (constraints). Klassiskeemi üheks eesmärgiks on määratleda alus teistele <br>
+        diagrammidele, kus väljendatakse süsteemi muid aspekte - objektide seisundeid ja objektide koostööd (collaboration) <br>
+        väljendatakse dünaamika diagrammidega. Klassiskeemi klassi saab otseselt realiseerida objekt-orienteeritud <br>
+        programmeerimiskeeles (Java, C++, jne), mis toetab klassi ehitust. 
+
+     </p><br><br>
+     <img src="../pildid/Klassidiagramm.png">
     <h2>Jadaskeem</h2><br>
     <!-- kirjuta kodus kasutuskeemilooskeemi kohta -->
+     <p>
+        Jadaskeem tegeleb interaktsioonis olevate objektide ja nende vahel vahetatavate ajalisele järjestamisele, kuid <br>
+        ei näita nende vahelisi seoseid. Objekte kujutatakse jadaskeemil kastikestena mis paiknevad vertikaalsete punktiir- <br>
+        joonte tippudes. Vertikaalsed punktiirjooned on objektide elujoon (life-line) mis kujutab objekti olemasolu teatud <br>
+        ajavahemikus.
+     </p><br><br>
+     <img src="../pildid/Jadasskeem.png">
     <h2>Olekuskeem</h2><br>
     <!-- kirjuta kodus kasutuskeemilooskeemi kohta -->
-    <h2>X</h2><br>
+     <p>
+        Olekuskeemi kasutatakse klassi, allsüsteemi või kogu süsteemi sisemise käitumise ja olekute kirjeldamiseks. See keskendub <br>
+        sellele kuidas objektid muudavad oma olekut ajas ja ajast millal sündmus toimub. Sündmuseks võib olla tingimuse tõeseks <br>
+        saamine, signaali vastuvõtt või operatsiooni väljakutse või etteantud perioodi möödumine. Olekuskeem (statechart diagrams) <br>
+        võib samastada "klassikaliste" olekuskeemidega (state-transition diagram). Olekuskeem võib omada lähtepunkti (algolek) ning mitut <br>
+        lõpp-punkti (lõppolekud). Olekuid kujutaatakse ümara kastiga, algolekud väikese täidetud ringiga, lõppolekut "härjasilma" <br>
+        sümboliga. Oleku siiret joonega, mille ühes otsas nool ülemineku suuna näitamiseks. Oleku siirded võivad olla märgistatud siiret <br>
+        põhjustava sündmusega.Sündmuse toimumisel viiakse oleku siire tegelikult läbi (siire käivitatakse). <br>
+        Olek võib sisaldada kolme liiki osasid: Esimene osa näitab oleku nime, Teine osa on mittekohustuslik seisundimuutujate osa, <br>
+        Kolmas osa on mittekohustuslik tegevuse osa. 
+     </p>
+     <img src="../pildid/Olekudiagramm.png">
+    <h2>Koostöödiagramm</h2><br>
     <p>
     <!-- kirjuta kodus X kohta -->
-        Lühikirjeldus
-        Kujundite/joonte lahtiseletus
-        Üks näidis joonis
+        Koostöödiagramm esitab prototüüpide ja nendevaheliste linkide ümber kujundatud interaktsioone. Erinevalt jadaskeemist näitab koostöö- <br>
+        diagramm seoseid prototüüpide vahel. Koostöödiagramm peab klassi nimele alati eelnema koolon. Võimalik on kasutada kahte tüüpi numeratsiooni, <br>
+        lihtsam tüüp mis näitab vaid sõnumite järgnevust ja üleüldse järgnevuse nägemine on lihtsam. Keerukam kümnendnummeratsiooniga diagramm mis võimaldab <br>
+        ka kuvada, milline operatsioon kutsub välja millise teise operatsiooni. Koostöödiagramm saab lisada tõpselt samasugust juhtinfomatsiooni, kui <br>
+        jadaskeemil. Tingimuste näitamiseks saab märkida tingimused sõnumite ette või kasutada iga stsenaariumi jaoks eraldi skeeme. Soovitatav on kasutada <br>
+        eraldi skeeme kuna väljenduse lihtsus on nende üks tugevavaim külg. Komplekssema käitumise puhul kaotavad nad kiiresti selguse. Kui on soov kirjeldada <br>
+        kompleksset käitumist ühelainsal skeemil, võiks selleks kasutada tegevusskeemi. 
     </p><br><br>
+    <img src="../pildid/Koostöödiagramm.png"> <br>
+
+    <a href="https://minitorn.tlu.ee/~jaagup/kool/java/tarkvara/liina_uml.pdf">Allika viide</a>
+    
+
+
 </body>
 </html>
