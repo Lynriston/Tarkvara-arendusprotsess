@@ -1,50 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Risto Kivistik | Portfolio</title>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #111827;
+            --light: #f9fafb;
+            --gray: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #1f2933, #020617);
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #d1d5db;
+        }
+
+        /* SECTIONS */
+        section {
+            margin: 60px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* ABOUT */
+        .about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 12px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            font-size: 0.9rem;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Tarkvara Arendusprotsess tunni raames koostatud ainemapp</h1>
-    <br>
-<p>
-        Tarkvara arendusprotsessi aines tehtud ainemapp kus  on teiste ainete ülesanded ja muud saavutused kuvatud
-</p>
-    <h2>Tarkvara Arendusprotsess:</h2>
-    <h3>Teooria</h3>
-    <a href="./SDLC/sdlc.html">Üldiselt - Mis see on.</a><br>
-    <a href="./CASE/index.html">CASE vahendid.</a><br>
-    <a href=".//UML/index.html">Unified Modeling Language.</a><br>
-    <a href="./SDLC/spiral.html">Spiraalmudel</a><br>
-    <a href="./SDLC/prototüüpimine.html">Prototüüpimine</a><br>
-    <a href="./SDLC/incremental.html">Incremental</a><br>
-    <a href="./SDLC/waterfall.html">Prototyping</a><br>
-    <a href="./DOCS/index.html">dokumentatsioon</a>
-    <h3>Praktiline rakendus</h3>
-    <a href="./BTC/index.html">Bitcoin Calculator.</a>
-    <a href="./PNC/index.html">Tooted ja Kategooriad</a>
-    <br>
-    --------------------------------------------------
-    <h2>Kes ma olen</h2>
-    <table>
-        <tr>
-            <td> Minu nimi</td>
-            <td>Mida ma teen:</td>
-            <td>Kust ma tulen:</td>
-            <td>Pilt</td>
-        </tr>
-        <tr>
-            <td>Risto Kivistik</td>
-            <td>Olen kohalik kivi</td>
-            <td>Tulen Hiiumaalt</td>
-            <td><img height="200" src="./pildid/Rock.png"></td>
-        </tr>
-        <tr>
-            <td aria-colspan="4">
-                <a href="https://github.com/Lynriston">Minu githubi link</a>
-            </td>
-        </tr>
-    </table>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="container">
+        <h1>Risto Kivistik</h1>
+        <p>
+            Algaja tarkvaraarendaja.  
+            Õpin ja praktiseerin tarkvara arendusprotsesse ning veebiarendust.
+        </p>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <section>
+        <h2>Minust</h2>
+        <div class="about">
+            <img src="./pildid/Rock.png" alt="Risto Kivistik">
+            <div>
+                <p>
+                    Olen pärit Hiiumaalt ja õpin tarkvara arendusprotsesse.
+                    Mulle meeldib praktiline õppimine ja süsteemide mõistmine
+                    alates ideest kuni valmis lahenduseni.
+                </p>
+                <p>
+                    <strong>Asukoht:</strong> Hiiumaa<br>
+                    <strong>Staatus:</strong> Õpilane / Algaja arendaja
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Oskused ja huvid</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SDLC</div>
+            <div class="skill">UML</div>
+            <div class="skill">CASE tools</div>
+            <div class="skill">Dokumentatsioon</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Projektid</h2>
+        <div class="projects">
+
+            <div class="project">
+                <h3>Bitcoin Calculator</h3>
+                <p>Lihtne kalkulaator krüptovaluuta väärtuste arvutamiseks.</p>
+                <a href="./BTC/index.html">Vaata projekti →</a>
+            </div>
+
+            <div class="project">
+                <h3>Tooted ja Kategooriad</h3>
+                <p>Rakendus toodete ja kategooriate haldamiseks.</p>
+                <a href="./PNC/index.html">Vaata projekti →</a>
+            </div>
+
+            <div class="project">
+                <h3>Tarkvara Arendusprotsess</h3>
+                <p>
+                    Teoreetilised materjalid: SDLC, UML, CASE, dokumentatsioon.
+                </p>
+                <a href="./SDLC/sdlc.html">Vaata materjale →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Kontakt</h2>
+        <p>
+            GitHub:  
+            <a href="https://github.com/Lynriston" target="_blank">
+                github.com/Lynriston
+            </a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Risto Kivistik
+</footer>
+
 </body>
 </html>
