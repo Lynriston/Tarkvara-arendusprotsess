@@ -3,44 +3,103 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Document</title> 
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
 </head> 
 <body> 
-    <h1>Tarkvara Arendusprotsess tunni raames koostatud ainemapp</h1> <br> 
-    <p> Tarkvara arendusprotsessi aines tehtud ainemapp kus on teiste ainete ülesanded ja muud saavutused kuvatud </p> 
-    <h2>Tarkvara Arendusprotsess:</h2> 
-    <h3>Teooria</h3> 
-    <a href="./SDLC/sdlc.html">Üldiselt - Mis see on.</a><br> 
-    <a href="./CASE/index.html">CASE vahendid.</a><br> 
-    <a href=".//UML/index.html">Unified Modeling Language.</a><br> 
-    <a href="./SDLC/spiral.html">Spiraalmudel</a><br> 
-    <a href="./SDLC/prototüüpimine.html">Prototüüpimine</a><br> 
-    <a href="./SDLC/incremental.html">Incremental</a><br> 
-    <a href="./SDLC/waterfall.html">Prototyping</a><br> 
-    <a href="./DOCS/index.html">dokumentatsioon</a> 
-    <h3>Praktiline rakendus</h3> 
-    <a href="./BTC/index.html">Bitcoin Calculator.</a> 
-    <a href="./PNC/index.html">Tooted ja Kategooriad</a> 
-    <br>
-    <h2>Kes ma olen</h2> 
-    <table> 
-        <tr> 
-            <td> Minu nimi</td> 
-            <td>Mida ma teen:</td> 
-            <td>Kust ma tulen:</td> 
-            <td>Pilt</td> 
-        </tr> 
-        <tr> 
-            <td>Risto Kivistik</td> 
-            <td>Olen kohalik kivi</td> 
-            <td>Tulen Hiiumaalt</td> 
-            <td><img height="200" src="./pildid/Rock.png"></td> 
-        </tr> 
-        <tr> 
-            <td aria-colspan="4"> 
-                <a href="https://github.com/Lynriston">Minu githubi link</a> 
-            </td> 
-        </tr> 
-    </table> 
-</body> 
+    <nav>
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <div class="dropbox">
+                <button class="dropbtn">SDLC</button>
+                <div class="dropdown-content">
+                    <a href="./SDLC/sdlc.html">SDLC</a>
+                    <a href="./SDLC/spiral.html">Spiraalmudel</a>
+                    <a href="./SDLC/waterfall.html">Kosemudel</a>
+                    <a href="./SDLC/prototüüpimine.html">Prototüüpimine</a>
+                    <a href="./SDLC/incremental.html">Inkrementaal</a>
+                    <a href="./SDLC/agile.html">Agiilne arendustsükkel</a>
+                    <a href="./SDLC/bigbang.html">Big Bang</a>
+                    <a href="./SDLC/DevOps.html">DevOps</a>
+                    <a href="./SDLC/vShape.html">V-Shape</a>
+                    <a href="./SDLC/XP.html">XP arendusmudel</a>
+                </div>
+            </div>
+
+            <div class="dropbox">
+                <button class="dropbtn">UML</button>
+                <div class="dropdown-content">
+                    <a href="./UML/index.html">UML</a>
+                    <a href="./UML/ERD.html">ERD</a>
+                    <a href="./UML/flowchart.html">Flowchart</a>
+                </div>
+            </div>
+      
+            <div class="dropbox">
+                <button class="dropbtn">BTC</button>
+                <div class="dropdown-content">
+                    <a href="./BTC/index.html">BTC</a>
+                </div>
+            </div>
+        
+            <div class="dropbox">
+                <button class="dropbtn">CASE</button>
+                <div class="dropdown-content">
+                    <a href="./CASE/index.html">CASE</a>
+                    <a href="./CASE/lowercase.html">Lowercase</a>
+                    <a href="./CASE/uppercase.html">Uppercase</a>
+                </div>
+            </div>
+        
+            <div class="dropbox">
+                <button class="dropbtn">DOCS</button>
+                <div class="dropdown-content">
+                    <a href="./DOCS/index.html">DOCS</a>
+                </div>
+            </div>
+
+            <div class="dropbox">
+                <button class="dropbtn">Praktilised rakendused</button>
+                <div class="dropdown-content">
+                    <a href="./BTC/index.html">Bitcoin Calculator.</a>
+                    <a href="./PNC/index.html">Tooted ja Kategooriad</a>
+                </div>
+            </div>
+
+            <div class="dropbox">
+                <button class="dropbtn">Socials</button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/Lynriston">Github</a>
+                    <a href="*">Twitter</a>
+                    <a href="*">Youtube</a>
+                    <a href="*">Twitch</a> 
+                </div>
+            </div>
+        </div>
+    </nav><br>
+
+    <main>
+        <div>
+        <h1>| Tarkvara Arendusprotsess ainemapp |</h1>
+        <p> Tarkvara arendusprotsessi aines tehtud ainemapp kus on teiste ainete ülesanded ja muud saavutused kuvatud </p> <br>
+        </div>
+        
+        <div class="about">
+            <div>
+                <h2>| Kes ma Olen |</h2>
+                <p><strong>Nimi:</strong> Risto Kivistik</p>
+                <p><strong>Mida teen:</strong> Olen kohalik kivi</p>
+                <p><strong>Kust tulen:</strong> Hiiumaalt</p>
+            </div>
+
+            <img height="200" src="./pildid/noBG_RubberDuckie.png">
+        </div>
+    </main>
+      
+    <footer>
+    Risto Kivistik 2025
+    </footer>
+</body>
 </html>
